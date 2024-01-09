@@ -12,6 +12,7 @@ services:
       - NextCloud_Data:/var/www/html:z
     environment:
       - REDIS_HOST=redis
+      - OC_trusted_domains=*
     depends_on:
       - redis
 
